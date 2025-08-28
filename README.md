@@ -20,8 +20,8 @@ Table Creation: A table named retail_sales is created to store the sales data. T
 
 	'''sql
 	CREATE DATABASE project1_retailsales;
-	'''
-
+ 	'''
+	'''sql
 	CREATE TABLE retail_sales
 	(
 	    transactions_id INT PRIMARY KEY,
@@ -42,8 +42,9 @@ Record Count: Determine the total number of records in the dataset.
 Customer Count: Find out how many unique customers are in the dataset.
 Category Count: Identify all unique product categories in the dataset.
 Null Value Check: Check for any null values in the dataset and delete records with missing data.
-	'''sql
- 
+	
+  '''sql
+  
 	SELECT * FROM retail_sales
 	LIMIT 10;
 	SELECT COUNT(*) FROM retail_sales;
@@ -92,10 +93,7 @@ Null Value Check: Check for any null values in the dataset and delete records wi
 	    OR
 	    total_sale IS NULL;
 	
-	**How many sales we have?**
 	SELECT COUNT(*) as total_sale FROM retail_sales
-	
-	**How many uniuque customers we have ?**
 	
 	SELECT COUNT(DISTINCT customer_id) as total_sale FROM retail_sales
 	

@@ -20,8 +20,7 @@ Table Creation: A table named retail_sales is created to store the sales data. T
 
 	'''sql
 	CREATE DATABASE project1_retailsales;
- 	'''
-	'''sql
+ 
 	CREATE TABLE retail_sales
 	(
 	    transactions_id INT PRIMARY KEY,
@@ -49,13 +48,13 @@ Null Value Check: Check for any null values in the dataset and delete records wi
 	LIMIT 10;
 	SELECT COUNT(*) FROM retail_sales;
 	SELECT * FROM retail_sales
-	WHERE transactions_id IS NULL
+	WHERE transactions_id IS NULL;
 	
 	SELECT * FROM retail_sales
-	WHERE sale_date IS NULL
+	WHERE sale_date IS NULL;
 	
 	SELECT * FROM retail_sales
-	WHERE sale_time IS NULL
+	WHERE sale_time IS NULL;
 	
 	SELECT * FROM retail_sales
 	WHERE 
@@ -93,11 +92,11 @@ Null Value Check: Check for any null values in the dataset and delete records wi
 	    OR
 	    total_sale IS NULL;
 	
-	SELECT COUNT(*) as total_sale FROM retail_sales
+	SELECT COUNT(*) as total_sale FROM retail_sales;
 	
-	SELECT COUNT(DISTINCT customer_id) as total_sale FROM retail_sales
+	SELECT COUNT(DISTINCT customer_id) as total_sale FROM retail_sales;
 	
-	SELECT DISTINCT category FROM retail_sales
+	SELECT DISTINCT category FROM retail_sales;
 	'''
 ## 3.Data Analysis & Findings
 The following SQL queries were developed to answer specific business questions:

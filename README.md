@@ -20,6 +20,7 @@ Table Creation: A table named retail_sales is created to store the sales data. T
 
 '''sql
 CREATE DATABASE project1_retailsales;
+'''
 
 CREATE TABLE retail_sales
 (
